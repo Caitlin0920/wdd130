@@ -1,0 +1,20 @@
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: gray;
+}
+#title-image {
+    width: 1600px;
+}
+.images-shape {
+    padding: 20px;
+    width: 300px;
+    margin: 25px auto;
+    border-radius: 50%;
+    background-color: rgb(73, 73, 73);
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
