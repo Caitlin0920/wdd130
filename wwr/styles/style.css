@@ -42,7 +42,7 @@ body {
 }
 
 header {
-    background-color: #8ecae688;
+    background-color: #034363f1;
     display: grid;
     grid-template-columns: 150px auto;
 }
@@ -238,8 +238,8 @@ nav {
 .collapsible {
     width: 90%;
     margin: 0 5em 0 5em;
-    background-color: #034363;
-    color: #ffffff;
+    background-color: #8ecae6eb;
+    color: #034363;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center;
@@ -252,7 +252,7 @@ nav {
     
 }
 .arrow {
-    border: solid white;
+    border: solid #034363;
     border-width: 0 3px 3px 0;
     padding: 5px;
     width: 2px;
