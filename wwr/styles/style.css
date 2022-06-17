@@ -220,7 +220,7 @@ nav {
     font-family: "Marck Script", Allura, Charmonman;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 1em;
+    margin-left: 3em;
 }
 .input-icons {
     margin: auto;
@@ -232,11 +232,12 @@ nav {
     margin-top: -2em;
     grid-column: 1/5;
     grid-row: 2/3;
-    margin-left: 1em;
+    margin-left: 4em;
 }
+
 .collapsible {
-    width: 100%;
-    margin-bottom: 1em;
+    width: 90%;
+    margin: 0 5em 0 5em;
     background-color: #034363;
     color: #ffffff;
     display: grid;
@@ -262,7 +263,7 @@ nav {
     -webkit-transform: rotate(-45deg);
 }
 .content {
-    margin: 0 5em 2em 5em;
+    margin: 0 6em 2em 6em;
 }
 /* .active, .collapsible:hover {
     background-color: #8ECAE6;
