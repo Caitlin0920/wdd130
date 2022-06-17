@@ -207,6 +207,115 @@ nav {
     grid-row: 1/2;
     margin-top: 100px;
 }
+.FAQ-page-box {
+    margin-bottom: -9em;
+}
+#head-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.3fr;
+}
+#FAQ-head-box {
+    color: #034363;
+    font-family: "Marck Script", Allura, Charmonman;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 1em;
+}
+.input-icons {
+    margin: auto;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+#head-box-p {
+    font-size: smaller;
+    margin-top: -2em;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin-left: 1em;
+}
+.collapsible {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: #034363;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-self: start;
+}
+.collapsible h3 {
+    grid-column: 2/10;
+    font-size: x-large;
+    font-family: "Marck Script", Allura, Charmonman;
+    
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+    width: 2px;
+    grid-column: 1/2;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.content {
+    margin: 0 5em 2em 5em;
+}
+/* .active, .collapsible:hover {
+    background-color: #8ECAE6;
+  }
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+  } */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: 5px;
+}
+#landscape {
+    width: 100%;
+    grid-column: 1/2;
+    border-radius: 10px;
+}
+#boating {
+    width: 100%;
+    grid-column: 2/3;
+    border-radius: 10px;
+}
+#colorado {
+    width: 100%;
+    grid-column: 3/4;
+    border-radius: 10px;
+}
+#boat {
+    width: 100%;
+    grid-column: 4/5;
+    border-radius: 10px;
+}
+#salmon {
+    width: 100%;
+    grid-column: 5/6;
+    border-radius: 10px;
+}
+#green-boat {
+    width: 100%;
+    grid-column: 6/7;
+    border-radius: 10px;
+}
+#ram {
+    width: 100%;
+    grid-column: 7/8;
+    border-radius: 10px;
+}
+
+
 
 
 @media screen and (max-width: 900px) {
