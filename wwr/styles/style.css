@@ -245,7 +245,8 @@ nav {
     align-items: center;
     justify-self: start;
 }
-.collapsible h3 {
+.collapsible strong{
+    margin: 8px 8px;
     grid-column: 2/10;
     font-size: x-large;
     font-family: "Marck Script", Allura, Charmonman;
