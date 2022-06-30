@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Hi+Melody&family=Nunito:wght@200&family=Roboto+Mono:wght@200&display=swap');
+
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+header {
+    background-color: #DED9DF;
+    display: grid;
+    grid-template-columns: 100px 4fr 1fr 1fr;
+}
+
+#logo{
+    padding: 15px 15px;
+    border-radius: 50%;
+    width: 80px;
+    grid-column: 1/2;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    text-align: center;
+    font-size: large;
+    color: #806E87;
+    text-decoration: none;
+}
+#left-grid {
+    width: 100%;
+    grid-column: 2/3;
+}
+#appointment-grid {
+    width: 100%;
+    grid-column: 4/5;
+}
+nav a:hover {
+    display: grid;
+    width: 10em;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    background-color: #806E87;
+    color: white;
+}
+#banner-box {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 3em repeat(4, 1fr) 3em;
+}
+#banner-picture {
+    grid-column: 10/20;
+    grid-row: 2/6;
+}
+#banner-picture img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#banner-text {
+    box-shadow: 5px 6px #ded9dfcd;
+    grid-column: 3/11;
+    grid-row: 3/5;
+    background-color: #806E87;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+h1, h2, h3, h5, h6 {
+    font-family: "Hi Melody", "Gloria Hallelujah";
+}
+p {
+    font-family: Nunito, "Roboto Mono", Lato;
+}
+#banner-text p {
+    margin: -1em 4em 0 4em;
+}
+.button-box{
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #5F5365;
+    background-color: #DED9DF;
+}
+a {
+    text-decoration: none;
+    color: #5F5365;
+}
+a:hover {
+    background-color: #5F5365;
+    color: white;
+}
+#service-type-box {
+    padding: 2em 2em;
+    background-color: #bfa6c4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(4, 1em);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1em;
+    font-size: larger;
+}
+#service-type-box img{
+    width: 100%;
+}
+.margin h3, .margin p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#solid-color-box {
+    height: 100%;
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+#nail-art-box {
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-color: white;
+}
+#solid-color-removeral-box {
+    height: 100%;
+    background-color: white;
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+#art-design-removeral-box {
+    height: 100%;
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 1/4;
+}
+#book-button-1 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+#book-button-2 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+#book-button-3 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+#book-button-4 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+footer {
+    width: 100%;
+    background-color: #DED9DF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.social img{
+    width: 30px;
+}
