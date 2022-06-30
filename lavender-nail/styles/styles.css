@@ -24,7 +24,7 @@ nav {
 nav a {
     text-align: center;
     font-size: large;
-    color: #806E87;
+    color: #4c4151;
     text-decoration: none;
 }
 #left-grid {
@@ -82,12 +82,12 @@ p {
     border-radius: 5px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: #5F5365;
+    color: #4c4151;
     background-color: #DED9DF;
 }
 a {
     text-decoration: none;
-    color: #5F5365;
+    color: #4c4151;
 }
 a:hover {
     background-color: #5F5365;
