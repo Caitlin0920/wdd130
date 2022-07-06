@@ -162,3 +162,83 @@ footer {
 .social img{
     width: 30px;
 }
+#head-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+#FAQ-head-box {
+    grid-column: 1/2;
+    font-size: 20px;
+}
+.input-icons {
+    grid-column: 6/7;
+}
+.accordion {
+    font-family: "Hi Melody", "Gloria Hallelujah";
+    background-color: #5F5365;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+  }
+  
+.active, .accordion:hover {
+    background-color: #DED9DF;
+    color: #5F5365;
+  }
+  
+.panel {
+    padding: 0 4em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+.photos {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 5px;
+}
+#disney {
+    width: 100%;
+    grid-column: 1/2;
+    border-radius: 10px;
+}
+#flower {
+    width: 100%;
+    grid-column: 2/3;
+    border-radius: 10px;
+}
+#foil {
+    width: 100%;
+    grid-column: 3/4;
+    border-radius: 10px;
+}
+#frenchtips {
+    width: 100%;
+    grid-column: 4/5;
+    border-radius: 10px;
+}
+#modern {
+    width: 100%;
+    grid-column: 5/6;
+    border-radius: 10px;
+}
+#galaxy {
+    width: 100%;
+    grid-column: 6/7;
+    border-radius: 10px;
+}
+#solid {
+    width: 100%;
+    grid-column: 7/8;
+    border-radius: 10px;
+}

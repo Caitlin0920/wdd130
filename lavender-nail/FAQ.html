@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/syles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Lavender Nail Studio FAQ</title>
 </head>
 <body>
     <header>
         <a id="logo_link" href="index.html">
-            <img id="logo" src="images/logo.png" alt="Logo" width="80px">
+            <img id="logo" src="images/logo.png" alt="Logo">
         </a>
-        <nav>
+        <nav id="left-grid">
             <a href="index.html">Home</a>
             <a href="about-manicures.html">About Manicures</a>
             <a href="FAQ.html">FAQ</a>
-            <a href="contactus.html">Book an appointment</a>
+        </nav>
+        <nav id="appointment-grid">
+            <a href="https://lavendernailstudio1apointment.as.me/" target="_blank">Book an appointment</a>
         </nav>
     </header>
     <main id="home-grid">
@@ -29,51 +31,63 @@
                     <input type="text" placeholder="Sreach" name="search">
                 </div>
             </div>
-            <div class="button-background">
-                <button type="button" class="collapsible">
-                    <div class="dot"></div>
-                    <strong>Why is the time that manicure stay on my nails different when I go to different store?</strong>
-                </button>
-            </div>
-            <div class="content">
+            <button type="button" class="accordion">
+                <strong>Why is the time that manicure stay on my nails different when I go to different store?</strong>
+            </button>
+            <div class="panel">
                 <p>Every manicurist has different material. Some of them may be more firm but hard to remove. Some of them may be easy to remove but not firm as the first one. However, there are still some of customers' manicure last less than average at our studio but they went to other studio and the manicure can last longer than average and vice versa. 
                     So, it really depends on what manicurists and material match your nails. 
                     Hope you can find the one that you love. Of course, we hope that one will be us.
                 </p>
             </div>
-            <div class="button-background">
-                <button type="button" class="collapsible">
-                    <div class="dot"></div>
-                    <strong>Why is my manicure always lifting from the back?</strong>
-                </button>
-            </div>
-            <div class="content">
+            <button type="button" class="accordion">
+                <strong>Why is my manicure always lifting from the back?</strong>
+            </button>
+            <div class="panel">
                 <p>
                     There are a lot of reason for that. The most common one is that you often overuse your fingertips. 
                     Another one is that if you are not used to do things with your finger pulp and you have long nails, this will increase the chance you put too much pressure on your fingertips.
                 </p>
             </div>
-            <img src="images/frenchtips.png" alt="Frenchtips" width="200px">
-            <img src="#" alt="photo 2">
-            <img src="#" alt="photo 3">
-            <img src="#" alt="photo 4">
-            <img src="#" alt="photo 5">
-            <img src="#" alt="photo 6">
-            <img src="#" alt="photo 7">
-
+            <div class="photos">
+                <img src="images/IMG_3616.JPG" alt="Disney" id="disney">
+                <img src="images/IMG_3670.JPG" alt="Flower" id="flower">
+                <img src="images/IMG_3608.JPG" alt="Golden Foil" id="foil">
+                <img src="images/IMG_3003.JPG" alt="Frenchtips" id="frenchtips">
+                <img src="images/IMG_2594.JPG" alt="Modern design" id="modern">
+                <img src="images/IMG_2937.JPG" alt="Galaxy" id="galaxy">
+                <img src="images/IMG_3612.JPG" alt="solid color" id="solid">
+            </div>
+        </div>
     </main>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
     <footer>
-        <h3>Dry Oar &copy; 2022 - Yun-Ting Chang</h3>
-        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h4>Dry Oar &copy; 2022 - Yun-Ting Chang</h4>
+        <h4 id="site-plan"><a href="site-plan.html">Site Plan</a></h4>
         <div class="social">
-            <a href="#" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+            <a href="https://www.facebook.com/LavenderNailStudio2021/" target="_blank">
+                <img src="images/fb-icon.png" alt="fb icon">
             </a>
-            <a href="#" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Flavendernailstudio_%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR31RWCdg2vz389QEYOYjGglYBewxXW7QlVPtqbjYwORYjuTVomgE7hamnA&h=AT0tv6mwuumQjrTt89sE6CFImEinObu0cYKXpFUbmmu-y-CffCHeujtn_uVOyLx-lr0Z58RWNKCeJvaOoEKHjJ_3Hb2UXgHAHUtVL7X3A2dbjkbTpPOI5JgiHGxRjsG70-plmw" target="_blank">
+                <img src="images/ig-icon.png" alt="instagram icon">
             </a>
-            <a href="#" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+            <a href="https://lavendernailstudio1apointment.as.me/" target="_blank">
+                <img src="images/book-icon.png" alt="book icon">
             </a>
         </div>
     </footer>
