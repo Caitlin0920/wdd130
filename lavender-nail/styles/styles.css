@@ -242,3 +242,21 @@ footer {
     grid-column: 7/8;
     border-radius: 10px;
 }
+#about-manicures-page {
+    margin: 1em 3em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#about-manicures-page p{
+    width: 90%;
+}
+#nail-polish {
+    width: 90%;
+}
+ol {
+    width: 90%;
+    text-align: left;
+    font-family: Nunito, "Roboto Mono", Lato;
+}
